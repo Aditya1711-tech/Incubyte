@@ -42,6 +42,24 @@ function changeDirection(initialDirection, rotateTo) {
   if (initialDirection === "DOWN" && rotateTo === "R") {
     return directionForDown.R;
   }
+  if (rotateTo === "Up") {
+    return "Up";
+  }
+  if (rotateTo === "DOWN") {
+    return "Down";
+  }
+  if (rotateTo === "E") {
+    return "E";
+  }
+  if (rotateTo === "W") {
+    return "W";
+  }
+  if (rotateTo === "N") {
+    return "N";
+  }
+  if (rotateTo === "S") {
+    return "S";
+  }
 }
 
 module.exports = {

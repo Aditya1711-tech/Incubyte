@@ -41,3 +41,9 @@ test("moves forward when facing Down", () => {
   position = moveForward(position, direction);
   expect(position).toStrictEqual([0, 0, -1]);
 });
+// test("Should return invalid direction for any random input", () => {
+//   let direction = "DOW";
+//   let position = [0, 0, 0];
+//   position = moveForward(position, direction);
+//   expect(position).toStrictEqual(["Invalid direction"]);
+// });
