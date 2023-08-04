@@ -24,10 +24,10 @@ function translateCommands(commands, initial) {
       direction = changeDirection(direction, "L");
       console.log(position, direction);
     } else if (commands[i] === "u") {
-      direction = changeDirection(direction, "Up");
+      direction = changeDirection(direction, "U");
       console.log(position, direction);
     } else if (commands[i] === "d") {
-      direction = changeDirection(direction, "Down");
+      direction = changeDirection(direction, "D");
       console.log(position, direction);
     } else {
       console.log("Invalid command");

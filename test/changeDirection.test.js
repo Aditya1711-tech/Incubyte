@@ -26,13 +26,13 @@ test("changes direction when facing West", () => {
 });
 
 test("changes direction when facing Up", () => {
-  const initialDirection = "UP";
+  const initialDirection = "U";
   const rotateTo = "L";
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("W");
 });
 
 test("changes direction when facing Down", () => {
-  const initialDirection = "DOWN";
+  const initialDirection = "D";
   const rotateTo = "L";
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("E");
 });
@@ -63,23 +63,23 @@ test("changes direction when facing West", () => {
 });
 
 test("changes direction when facing Up", () => {
-  const initialDirection = "UP";
+  const initialDirection = "U";
   const rotateTo = "R";
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("E");
 });
 
 test("changes direction when facing Down", () => {
-  const initialDirection = "DOWN";
+  const initialDirection = "D";
   const rotateTo = "R";
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("W");
 });
 
 test("changes direction when direction is given as input", () => {
-  const initialDirection = "DOWN";
-  let rotateTo = "Up";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("Up");
-  rotateTo = "DOWN";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("Down");
+  const initialDirection = "D";
+  let rotateTo = "U";
+  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("U");
+  rotateTo = "D";
+  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("D");
   rotateTo = "E";
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("E");
   rotateTo = "W";

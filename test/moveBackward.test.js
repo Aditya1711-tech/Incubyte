@@ -29,14 +29,14 @@ test("moves backward when facing West", () => {
 });
 
 test("moves backward when facing Up", () => {
-  const direction = "UP";
+  const direction = "U";
   let position = [0, 0, 0];
   position = moveBackward(position, direction);
   expect(position).toStrictEqual([0, 0, -1]);
 });
 
 test("moves backward when facing Down", () => {
-  const direction = "DOWN";
+  const direction = "D";
   let position = [0, 0, 0];
   position = moveBackward(position, direction);
   expect(position).toStrictEqual([0, 0, 1]);

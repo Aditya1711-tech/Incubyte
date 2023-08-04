@@ -14,10 +14,10 @@ function moveForward(position, direction) {
     case "W":
       tempPos[0] -= 1;
       return tempPos;
-    case "UP":
+    case "U":
       tempPos[2] += 1;
       return tempPos;
-    case "DOWN":
+    case "D":
       tempPos[2] -= 1;
       return tempPos;
     // default:

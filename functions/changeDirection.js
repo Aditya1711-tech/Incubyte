@@ -30,23 +30,23 @@ function changeDirection(initialDirection, rotateTo) {
   if (initialDirection === "W" && rotateTo === "R") {
     return directionForWest.R;
   }
-  if (initialDirection === "UP" && rotateTo === "L") {
+  if (initialDirection === "U" && rotateTo === "L") {
     return directionForUp.L;
   }
-  if (initialDirection === "UP" && rotateTo === "R") {
+  if (initialDirection === "U" && rotateTo === "R") {
     return directionForUp.R;
   }
-  if (initialDirection === "DOWN" && rotateTo === "L") {
+  if (initialDirection === "D" && rotateTo === "L") {
     return directionForDown.L;
   }
-  if (initialDirection === "DOWN" && rotateTo === "R") {
+  if (initialDirection === "D" && rotateTo === "R") {
     return directionForDown.R;
   }
-  if (rotateTo === "Up") {
-    return "Up";
+  if (rotateTo === "U") {
+    return "U";
   }
-  if (rotateTo === "DOWN") {
-    return "Down";
+  if (rotateTo === "D") {
+    return "D";
   }
   if (rotateTo === "E") {
     return "E";
