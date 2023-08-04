@@ -20,8 +20,8 @@ function moveForward(position, direction) {
     case "D":
       tempPos[2] -= 1;
       return tempPos;
-    // default:
-    //   return ["Invalid direction"];
+    default:
+      return ["Invalid direction"];
   }
 }
 

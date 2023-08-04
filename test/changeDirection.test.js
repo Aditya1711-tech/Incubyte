@@ -74,18 +74,43 @@ test("changes direction when facing Down", () => {
   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("W");
 });
 
-test("changes direction when direction is given as input", () => {
+/*-------------- what to do when direction in already U/D and rotateTo also gives as U/D -----------*/
+// Here for these cases we assum
+// test("changes direction when facing Up", () => {
+//   const initialDirection = "U";
+//   const rotateTo = "U";
+//   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("N");
+// });
+// test("changes direction when facing Down", () => {
+//   const initialDirection = "D";
+//   const rotateTo = "D";
+//   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("S");
+// });
+// test("changes direction when facing Up", () => {
+//   const initialDirection = "U";
+//   const rotateTo = "D";
+//   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("S");
+// });
+// test("changes direction when facing Down", () => {
+//   const initialDirection = "D";
+//   const rotateTo = "D";
+//   expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("N");
+// });
+
+/*-----------------------------------------------------------------------------------------------*/
+
+test("return invalid direction for any random input", () => {
+  const initialDirection = "DOW";
+  const rotateTo = "L";
+  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual(
+    "Invalid direction"
+  );
+});
+
+test("return invalid direction for any random input", () => {
   const initialDirection = "D";
-  let rotateTo = "U";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("U");
-  rotateTo = "D";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("D");
-  rotateTo = "E";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("E");
-  rotateTo = "W";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("W");
-  rotateTo = "N";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("N");
-  rotateTo = "S";
-  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual("S");
+  const rotateTo = "LE";
+  expect(changeDirection(initialDirection, rotateTo)).toStrictEqual(
+    "Invalid direction"
+  );
 });

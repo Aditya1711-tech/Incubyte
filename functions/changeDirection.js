@@ -42,24 +42,30 @@ function changeDirection(initialDirection, rotateTo) {
   if (initialDirection === "D" && rotateTo === "R") {
     return directionForDown.R;
   }
+
+  // If direction is already Up/Down and Command is Up/Down then took North is as referance
+  // if (initialDirection == "U" && rotateTo === "U") {
+  //   return "N";
+  // }
+  // if (initialDirection == "U" && rotateTo === "D") {
+  //   return "S";
+  // }
+  // if (initialDirection == "D" && rotateTo === "U") {
+  //   return "N";
+  // }
+  // if (initialDirection == "D" && rotateTo === "D") {
+  //   return "S";
+  // }
+
+  // For any other direction and command is Up/Down then just do accordingly
   if (rotateTo === "U") {
     return "U";
   }
   if (rotateTo === "D") {
     return "D";
   }
-  if (rotateTo === "E") {
-    return "E";
-  }
-  if (rotateTo === "W") {
-    return "W";
-  }
-  if (rotateTo === "N") {
-    return "N";
-  }
-  if (rotateTo === "S") {
-    return "S";
-  }
+
+  return "Invalid direction";
 }
 
 module.exports = {

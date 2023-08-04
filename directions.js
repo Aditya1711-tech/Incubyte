@@ -1,26 +1,26 @@
-console.log("This is Aditya crafting for incubyte");
+console.log("This is Aditya crafting with incubyte");
 
-let directionForNorth = {
+const directionForNorth = {
   L: "W",
   R: "E",
 };
-let directionForSouth = {
+const directionForSouth = {
   L: "E",
   R: "W",
 };
-let directionForEast = {
+const directionForEast = {
   L: "N",
   R: "S",
 };
-let directionForWest = {
+const directionForWest = {
   L: "S",
   R: "N",
 };
-let directionForUp = {
+const directionForUp = {
   L: "W",
   R: "E",
 };
-let directionForDown = {
+const directionForDown = {
   L: "E",
   R: "W",
 };
