@@ -1,6 +1,6 @@
 const changeDirection = require("../functions/changeDirection").changeDirection;
 
-// Test caes for rotation in the left direction
+// Test caes added for rotation in the left direction
 test("changes direction when facing North", () => {
   const initialDirection = "N";
   const rotateTo = "L";
