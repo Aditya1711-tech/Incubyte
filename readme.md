@@ -29,9 +29,3 @@
 ```sh
   npm run test <FileName>
 ```
-
-**for frontend** <br>
-```sh
-  npm i
-  npm start
-```
