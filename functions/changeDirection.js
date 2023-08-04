@@ -43,19 +43,18 @@ function changeDirection(initialDirection, rotateTo) {
     return directionForDown.R;
   }
 
-  // If direction is already Up/Down and Command is Up/Down then took North is as referance
-  // if (initialDirection == "U" && rotateTo === "U") {
-  //   return "N";
-  // }
-  // if (initialDirection == "U" && rotateTo === "D") {
-  //   return "S";
-  // }
-  // if (initialDirection == "D" && rotateTo === "U") {
-  //   return "N";
-  // }
-  // if (initialDirection == "D" && rotateTo === "D") {
-  //   return "S";
-  // }
+  if (initialDirection == "U" && rotateTo === "U") {
+    return directionForUp.U;
+  }
+  if (initialDirection == "U" && rotateTo === "D") {
+    return directionForUp.D;
+  }
+  if (initialDirection == "D" && rotateTo === "U") {
+    return directionForDown.U;
+  }
+  if (initialDirection == "D" && rotateTo === "D") {
+    return directionForDown.D;
+  }
 
   // For any other direction and command is Up/Down then just do accordingly
   if (rotateTo === "U") {

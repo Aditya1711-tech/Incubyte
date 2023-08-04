@@ -19,10 +19,14 @@ const directionForWest = {
 const directionForUp = {
   L: "W",
   R: "E",
+  U: "S",
+  D: "N",
 };
 const directionForDown = {
   L: "E",
   R: "W",
+  U: "S",
+  D: "N",
 };
 
 module.exports = {
