@@ -1,14 +1,4 @@
-const moveForward = require("./index").moveForward;
-
-const directionForNorth = require("./index").directionForNorth;
-const directionForSouth = require("./index").directionForSouth;
-const directionForEast = require("./index").directionForEast;
-const directionForWest = require("./index").directionForWest;
-const directionForUp = require("./index").directionForUp;
-const directionForDown = require("./index").directionForDown;
-
-// let position = require("./index").position;
-// let direction = require("./index").direction;
+const moveForward = require("../functions/moveForward").moveForward;
 
 describe("moveForward", () => {
   it("moves forward when facing North", () => {
