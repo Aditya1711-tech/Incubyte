@@ -1,40 +1,43 @@
 const moveBackward = require("../functions/moveBackWard").moveBackward;
 
-describe("moveBackward", () => {
-  it("moves backward when facing North", () => {
-    direction = "N";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([0, -1, 0]);
-  });
-  it("moves backward when facing South", () => {
-    direction = "S";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([0, 1, 0]);
-  });
-  it("moves backward when facing East", () => {
-    direction = "E";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([-1, 0, 0]);
-  });
-  it("moves backward when facing West", () => {
-    direction = "W";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([1, 0, 0]);
-  });
-  it("moves backward when facing Up", () => {
-    direction = "UP";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([0, 0, -1]);
-  });
-  it("moves backward when facing Down", () => {
-    direction = "DOWN";
-    position = [0, 0, 0];
-    moveBackward(position, direction);
-    expect(position).toStrictEqual([0, 0, 1]);
-  });
+test("moves backward when facing North", () => {
+  const direction = "N";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([0, -1, 0]);
+});
+
+test("moves backward when facing South", () => {
+  const direction = "S";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([0, 1, 0]);
+});
+
+test("moves backward when facing East", () => {
+  const direction = "E";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([-1, 0, 0]);
+});
+
+test("moves backward when facing West", () => {
+  const direction = "W";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([1, 0, 0]);
+});
+
+test("moves backward when facing Up", () => {
+  const direction = "UP";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([0, 0, -1]);
+});
+
+test("moves backward when facing Down", () => {
+  const direction = "DOWN";
+  let position = [0, 0, 0];
+  position = moveBackward(position, direction);
+  expect(position).toStrictEqual([0, 0, 1]);
 });

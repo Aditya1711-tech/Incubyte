@@ -1,5 +1,6 @@
 function moveForward(position, direction) {
   let tempPos = position;
+
   switch (direction) {
     case "N":
       tempPos[1] += 1;
